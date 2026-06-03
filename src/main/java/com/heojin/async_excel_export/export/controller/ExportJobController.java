@@ -119,7 +119,8 @@ public class ExportJobController {
             ResponseCookie cookie = ResponseCookie.from(CLIENT_ID_COOKIE_NAME, clientCookie.clientId())
                     .path("/")
                     .httpOnly(true)
-                    .sameSite("Lax")
+                    .secure(true)
+                    .sameSite("None")
                     .maxAge(Duration.ofHours(exportProperties.ttlHours()))
                     .build();
             headers.add(HttpHeaders.SET_COOKIE, cookie.toString());

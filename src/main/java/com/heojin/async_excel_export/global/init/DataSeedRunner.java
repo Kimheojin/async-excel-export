@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 @ConditionalOnProperty(name = "app.seed.enabled", havingValue = "true")
-@Profile("local")
+@Profile("prod")
 public class DataSeedRunner implements ApplicationRunner {
 
     private static final String INSERT_SQL = """

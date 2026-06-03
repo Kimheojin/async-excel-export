@@ -21,7 +21,7 @@ public class ExportJobWorker {
 
     @PostConstruct
     void start() {
-        exportJobService.failProcessingJobsOnStartup();
+        exportJobService.recoverJobsOnStartup();
         executorService.submit(this::run);
     }
 
