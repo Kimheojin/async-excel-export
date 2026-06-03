@@ -1,6 +1,6 @@
-package com.heojin.async_excel_export.status.service;
+package com.heojin.async_excel_export.dummyData.service;
 
-import com.heojin.async_excel_export.status.entity.Status;
+import com.heojin.async_excel_export.dummyData.entity.Status;
 
 final class DataSeedValues {
 

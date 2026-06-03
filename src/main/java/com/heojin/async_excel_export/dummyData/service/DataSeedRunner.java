@@ -1,6 +1,6 @@
-package com.heojin.async_excel_export.status.service;
+package com.heojin.async_excel_export.dummyData.service;
 
-import com.heojin.async_excel_export.status.repository.DataRepository;
+import com.heojin.async_excel_export.dummyData.repository.DataRepository;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Timestamp;
