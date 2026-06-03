@@ -1,7 +1,8 @@
 # 사전과제
 
-## 서비스 URL
-- https://react-test-iota-neon.vercel.app/
+## 배포 및 서비스 URL
+
+서비스 URL : https://react-test-iota-neon.vercel.app/
 
 ## 서비스 예시 및 사진
 
@@ -14,7 +15,7 @@
 - Backend: Spring Boot API 서버
 - Database: MySQL
 
-### 백엔드
+### 백엔드 배포 방식
 
 - 홈서버 및 docker, nginx
 
