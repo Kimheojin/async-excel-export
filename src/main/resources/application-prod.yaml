@@ -2,6 +2,9 @@
 
 ## dbname, 비번, 아이디
 
+server:
+  port: 9004
+
 spring:
   jpa:
     hibernate:
