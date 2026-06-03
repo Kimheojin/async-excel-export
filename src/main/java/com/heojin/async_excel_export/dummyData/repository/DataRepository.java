@@ -1,6 +1,6 @@
-package com.heojin.async_excel_export.status.repository;
+package com.heojin.async_excel_export.dummyData.repository;
 
-import com.heojin.async_excel_export.status.entity.Data;
+import com.heojin.async_excel_export.dummyData.entity.Data;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

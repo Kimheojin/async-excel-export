@@ -1,4 +1,4 @@
-package com.heojin.async_excel_export.status.entity;
+package com.heojin.async_excel_export.dummyData.entity;
 
 
 import jakarta.persistence.Column;
