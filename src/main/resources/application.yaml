@@ -1,3 +1,9 @@
 spring:
   profiles:
     default: local
+
+app:
+  seed:
+    enabled: true
+    target-count: 105000
+    batch-size: 1000

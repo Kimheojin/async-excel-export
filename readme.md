@@ -21,13 +21,7 @@
 - 프론트단 React + vite + vercel 활용해서
 
 ## 완려하면 지우기
-- DAO 단 설계
-  - 많아야 스키마 2개라 QueryDsl은 과함
-- 데이터 초기화 관련
-  - ApplicationRunner / CommandLineRunner 이런거 이용해서 DAO 태우고 데이터 확인 후 
-  - 삽입 하는 식으로 해야할거 같음
-  - 최대한 Batch 로 처리, JPA 사용 X (무거워짐)
-  - yaml 프로필 설정 꼭 하기(중요)
+
 - polling 상태 확인용 endpoint 등 설계하기
 - 내부 비동기 구현
   - 

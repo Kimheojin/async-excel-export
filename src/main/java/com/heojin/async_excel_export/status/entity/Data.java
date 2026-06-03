@@ -16,9 +16,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Data {
 
+
+    // pdf 요구사항은 Integer 로 되어있음
+    // 나중에 한번 더 보고 필요하면 Integer 로 수정
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column(name = "user_name")
     private String userName;
