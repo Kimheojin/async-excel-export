@@ -1,3 +1,22 @@
 ## dockercompose 단에서 DB 연결 처리
 
 ## dbname, 비번, 아이디
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+
+app:
+  seed:
+    enabled: true
+    target-count: 105000
+    batch-size: 1000
+  export:
+    storage-path: /tmp/async-excel-export/files
+    ttl-hours: 1
+    page-size: 1000

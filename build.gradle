@@ -33,11 +33,11 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok'
 
 	// 운영 환경
-//	runtimeOnly 'com.mysql:mysql-connector-j'
+	runtimeOnly 'com.mysql:mysql-connector-j'
 
 	// local 환경
-	developmentOnly 'com.h2database:h2'
-	testRuntimeOnly 'com.h2database:h2'
+//	developmentOnly 'com.h2database:h2'
+//	testRuntimeOnly 'com.h2database:h2'
 
 }
 

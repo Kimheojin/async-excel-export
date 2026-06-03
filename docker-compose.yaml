@@ -12,13 +12,18 @@ services:
       - TZ=Asia/Seoul
       - JAVA_TOOL_OPTIONS=-Duser.timezone=Asia/Seoul
       - SPRING_JPA_PROPERTIES_HIBERNATE_JDBC_TIME_ZONE=Asia/Seoul
+      - APP_EXPORT_STORAGE_PATH=/tmp/async-excel-export/files
     volumes:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
+      - excel-export-files:/tmp/async-excel-export/files
     networks:
       - blog-network
       - my-network
     restart: unless-stopped
+
+volumes:
+  excel-export-files:
 
 networks:
   blog-network:

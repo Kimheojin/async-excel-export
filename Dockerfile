@@ -13,10 +13,11 @@ RUN --mount=type=cache,target=/root/.gradle ./gradlew dependencies
 
 # --- 소스 코드 레이어 (자주 바뀜) ---
 COPY src src
-RUN --mount=type=cache,target=/root/.gradle ./gradlew build -x test -x asciidoctor
+RUN --mount=type=cache,target=/root/.gradle ./gradlew build -x test
 
 # 실행 스테이지
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
+VOLUME ["/tmp/async-excel-export/files"]
 ENTRYPOINT ["java", "-jar", "app.jar"]
