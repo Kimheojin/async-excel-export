@@ -7,3 +7,7 @@ app:
     enabled: true
     target-count: 105000
     batch-size: 1000
+  export:
+    storage-path: /tmp/async-excel-export/files
+    ttl-hours: 1
+    page-size: 1000
